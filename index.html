@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Đặt Xe Ghép - Tiện Chuyến Toàn Quốc</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      background: white;
+      color: #007bff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: #f1f1f1;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+    .feature-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .feature-box h3 {
+      padding: 1rem;
+      font-size: 1.2rem;
+      color: #007bff;
+    }
+    .feature-box p {
+      padding: 0 1rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    .routes ul {
+      list-style: none;
+      margin-top: 1rem;
+      padding: 0;
+    }
+    .routes li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #ddd;
+      font-size: 1.1rem;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    form input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button[type="submit"] {
+      background: #007bff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>Đặt Xe Ghép - Tiện Chuyến Toàn Quốc</h1>
+    <p>Chuyến đi tiết kiệm, tiện lợi, an toàn – chỉ với vài cú nhấn.</p>
+    <a href="#booking"><button class="btn-primary">Đặt xe ngay</button></a>
+  </header>
+
+  <section>
+    <h2 style="text-align:center;" data-aos="fade-up">Tại sao chọn chúng tôi?</h2>
+    <div class="features">
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.pexels.com/photos/193003/pexels-photo-193003.jpeg?auto=compress&cs=tinysrgb&h=180" alt="Tiết kiệm">
+        <h3>Tiết kiệm tối đa</h3>
+        <p>Chia sẻ chuyến đi giúp bạn giảm đến 30% chi phí so với đi riêng.</p>
+      </div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&h=180" alt="Linh hoạt">
+        <h3>Lịch trình linh hoạt</h3>
+        <p>Bạn chọn giờ đi – chúng tôi sắp xếp tài xế phù hợp.</p>
+      </div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?auto=compress&cs=tinysrgb&h=180" alt="Uy tín">
+        <h3>Tài xế uy tín</h3>
+        <p>Đội ngũ đối tác được đánh giá, xác minh hồ sơ rõ ràng.</p>
+      </div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="400">
+        <img src="https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?auto=compress&cs=tinysrgb&h=180" alt="Tiện nghi">
+        <h3>Xe chất lượng cao</h3>
+        <p>Ghế ngả, điều hoà mát lạnh, wifi miễn phí.</p>
+      </div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="500">
+        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg" alt="Nhanh chóng">
+        <h3>Đặt xe siêu tốc</h3>
+        <p>Chỉ vài thao tác đơn giản là có xe đến đón tận nơi.</p>
+      </div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="600">
+        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg" alt="Bảo hiểm">
+        <h3>Hỗ trợ & bảo hiểm</h3>
+        <p>Chúng tôi luôn đồng hành và hỗ trợ 24/7 mọi tuyến.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="routes" data-aos="fade-up">
+    <h2 style="text-align:center;">Tuyến phổ biến</h2>
+    <ul>
+      <li>🚗 TP.HCM ⇄ Đà Lạt</li>
+      <li>🚗 Hà Nội ⇄ Hải Phòng</li>
+      <li>🚗 TP.HCM ⇄ Vũng Tàu</li>
+      <li>🚗 Đà Nẵng ⇄ Hội An</li>
+      <li>🚗 Hà Nội ⇄ Ninh Bình</li>
+      <li>🚗 Cần Thơ ⇄ TP.HCM</li>
+    </ul>
+  </section>
+
+  <section id="booking" data-aos="fade-up">
+    <h2 style="text-align:center;">Đặt chuyến ngay</h2>
+    <form onsubmit="submitForm(event)">
+      <label>Họ và tên</label>
+      <input type="text" placeholder="Nguyễn Văn A" required>
+
+      <label>Số điện thoại</label>
+      <input type="tel" placeholder="0989xxxxxx" required>
+
+      <label>Điểm đi</label>
+      <input type="text" placeholder="TP.HCM" required>
+
+      <label>Điểm đến</label>
+      <input type="text" placeholder="Đà Lạt" required>
+
+      <label>Ghi chú</label>
+      <textarea rows="4" placeholder="Thời gian mong muốn, số người..."></textarea>
+
+      <button type="submit">Gửi yêu cầu</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Đặt Xe Ghép | Hotline: 0989 123 456 | Email: datxe@xeghep.vn</p>
+  </footer>
+
+  <!-- AOS animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Basic Form Submit Simulation -->
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thông tin đã được gửi. Chúng tôi sẽ liên hệ sớm!");
+    }
+  </script>
+</body>
+</html>
